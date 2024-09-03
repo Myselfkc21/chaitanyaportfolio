@@ -1,0 +1,28 @@
+ [
+      {
+        "project_name": "Crypto Dashboard",
+        "description": "Developed a visually engaging and interactive front-end Crypto Dashboard using React and Chakra UI. The project emphasizes clean, modern UI design and intuitive user experience, providing users with a sleek interface to view and interact with cryptocurrency data.",
+        "technologies": ["React", "Chakra UI", "Web Development"],
+        "github_link": "https://github.com/Myselfkc21/CryptoDashboardUI",
+        "image": "https://chaitanyacryptodashbord.netlify.app/"
+      },
+      {
+        "project_name": "Twitter Clone",
+        "description": "Developed a responsive and interactive front-end clone of Twitter using TailwindCSS, focusing on replicating the user interface with a clean and efficient design.",
+        "technologies": ["TailwindCSS", "Web Development"],
+        "github_link": "https://github.com/Myselfkc21/Twitter-clone",
+        "image": "https://twitterclonebykc.netlify.app/"
+      },
+      {
+        "project_name": "Autism Prediction",
+        "description": "Machine learning models can predict Autism Spectrum Disorder (ASD) by analyzing patterns and features in data, helping in early detection and personalized intervention strategies.",
+        "technologies": ["Machine Learning", "Python", "Data Science"],
+        "github_link": "https://github.com/Myselfkc21/Autism-Predictioin"
+      },
+      {
+        "project_name": "Dice Game",
+        "description": "Created an engaging dice game using React, featuring interactive elements and dynamic game logic to enhance user experience and gameplay.",
+        "technologies": ["React", "Web Development"],
+        "github_link": "https://github.com/Myselfkc21/Dice-game-using-React"
+      }
+    ]  

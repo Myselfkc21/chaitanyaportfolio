@@ -1,0 +1,62 @@
+@import "../../vars.css";
+
+.cont {
+  background-color: #19376d;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.leftside {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.rightside a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.leftside h1 {
+  font-size: 60px;
+}
+.leftside p {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.icons {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width:840px) {
+    .cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rightside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
