@@ -1,0 +1,155 @@
+.container {
+  max-width: 1400px;
+  margin: 100px;
+  padding: 0 24px;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  background: linear-gradient(90deg, #fff, #60bafa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
+}
+
+.card {
+  position: relative;
+  background: linear-gradient(145deg, rgba(19, 42, 83, 0.9), rgba(87, 108, 188, 0.8));
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(96, 186, 250, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(96, 186, 250, 0.15);
+  border-color: rgba(96, 186, 250, 0.2);
+}
+
+.content {
+  position: relative;
+  padding: 35px;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.projectName {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.star {
+  color: #999;
+  transition: all 0.3s ease;
+}
+
+.starActive {
+  color: #ffd700;
+  transform: scale(1.2);
+}
+
+.description {
+  color: #e0e0e0;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.tech {
+  background: rgba(11, 36, 71, 0.8);
+  color: #60bafa;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  border: 1px solid rgba(96, 186, 250, 0.2);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.tech:hover {
+  background: rgba(96, 186, 250, 0.15);
+  border-color: rgba(96, 186, 250, 0.4);
+  transform: translateY(-2px);
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(96, 186, 250, 0.1);
+  border: 1px solid rgba(96, 186, 250, 0.2);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.link:hover {
+  background: rgba(96, 186, 250, 0.2);
+  border-color: rgba(96, 186, 250, 0.4);
+  color: #60bafa;
+  transform: translateY(-2px);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, transparent, rgba(96, 186, 250, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+
+  .title {
+    font-size: 2.75rem;
+    text-align: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projectName {
+    font-size: 1.75rem;
+  }
+}
