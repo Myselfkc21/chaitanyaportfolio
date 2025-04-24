@@ -1,57 +1,47 @@
-import React, { useState } from "react";
-import { Code, Server, LayoutDashboard, TrendingUp } from "lucide-react";
+import React from "react";
 import styles from "./AboutSection.module.css";
 import pic from "../../assets/download.png";
+import { FaServer, FaCode, FaUsers, FaProjectDiagram } from "react-icons/fa";
+
+const aboutDetails = [
+  {
+    icon: <FaCode />,
+    title: "Full Stack Development",
+    description: "Hands-on experience in building scalable applications using React, Node.js, AdonisJS, and PostgreSQL.",
+  },
+  {
+    icon: <FaServer />,
+    title: "API & Backend Architecture",
+    description: "Specialized in designing efficient, RESTful APIs and scalable backend systems.",
+  },
+  {
+    icon: <FaProjectDiagram />,
+    title: "Projects & Innovation",
+    description: "Built impactful projects like a Web3 dApp, a language learning app, and real-time data scrapers.",
+  },
+  {
+    icon: <FaUsers />,
+    title: "Team Collaboration",
+    description: "Led cross-functional collaboration across frontend and backend teams; strong communication and problem-solving skills.",
+  },
+];
 
 const AboutSection = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
-
   return (
     <section className={styles.container}>
       <div className={styles.containerItems}>
-        <h1 className={styles.title} id="about">
-          About Me
-        </h1>
+        <h1 className={styles.title} id="about">About Me</h1>
         <div className={styles.contents}>
           <div className={styles.imageWrapper}>
-            <img src={pic} className={styles.image} alt="Profile" />
-            <div className={styles.imageOverlay}></div>
+            <img src={pic} className={styles.image} alt="Krishna Chaitanya" />
           </div>
           <div className={styles.items}>
-            {[
-              {
-                Icon: Code,
-                title: "Frontend Development",
-                desc: "Experienced in building responsive and optimized sites with modern frameworks and best practices.",
-              },
-              {
-                Icon: Server,
-                title: "Backend Development",
-                desc: "Proficient in developing scalable server-side applications and RESTful APIs.",
-              },
-              {
-                Icon: TrendingUp,
-                title: "Digital Marketing",
-                desc: "Strategic approach to digital marketing with focus on data-driven growth and engagement.",
-              },
-              {
-                Icon: LayoutDashboard,
-                title: "UI/UX Design",
-                desc: "Creating intuitive and visually appealing interfaces with focus on user experience and accessibility.",
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className={`${styles.item} ${
-                  activeIndex === index ? styles.active : ""
-                }`}
-                onMouseEnter={() => setActiveIndex(index)}
-                onMouseLeave={() => setActiveIndex(null)}
-              >
-                <item.Icon className={styles.icon} />
+            {aboutDetails.map((item, index) => (
+              <div key={index} className={styles.item}>
+                <div className={styles.icon}>{item.icon}</div>
                 <div className={styles.itemtext}>
                   <h2>{item.title}</h2>
-                  <p>{item.desc}</p>
+                  <p>{item.description}</p>
                 </div>
               </div>
             ))}

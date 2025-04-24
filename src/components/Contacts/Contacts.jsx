@@ -11,7 +11,7 @@ const contacts = [
   {
     icon: Linkedin,
     link: "https://www.linkedin.com/in/krishnachaitanya10/",
-    text: "linkedin.com/arekapudikrishnachaitanya",
+    text: "linkedin.com/in/krishnachaitanya10",
   },
   {
     icon: Github,
@@ -25,10 +25,12 @@ const Contacts = () => {
     <section className={styles.container} id="contact">
       <div className={styles.content}>
         <div className={styles.header}>
-          <h2 className={styles.title}>Contact</h2>
-          <p className={styles.subtitle}>Feel free to reach out!</p>
+          <h2 className={styles.title}>Let’s Connect</h2>
+          <p className={styles.subtitle}>
+            Interested in collaborating or have a question? I'm always open to
+            discussing new ideas or opportunities.
+          </p>
         </div>
-
         <div className={styles.links}>
           {contacts.map((contact, index) => (
             <a
@@ -39,7 +41,7 @@ const Contacts = () => {
               rel="noopener noreferrer"
             >
               <contact.icon className={styles.icon} />
-              <span>{contact.text}</span>
+              <span className={styles.linkText}>{contact.text}</span>
             </a>
           ))}
         </div>

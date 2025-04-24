@@ -9,10 +9,7 @@ const HeroSection = () => {
           Hi, I'm <span className={styles.name}>Chaitanya</span>
         </h1>
         <p className={styles.description}>
-          I specialize in web development and digital marketing. My work spans
-          from creating web applications using React to developing systems for
-          gesture recognition and autism prediction. I'm always eager to learn
-          and take on new challenges in the tech world.
+          I build full stack web applications using React, Node.js, and AdonisJS. Passionate about backend development, API design, and crafting clean user interfaces.
         </p>
         <div className={styles.btnContainer}>
           <a
