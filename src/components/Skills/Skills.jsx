@@ -1,35 +1,54 @@
 import React from "react";
 import styles from "./Skills.module.css";
-import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaPython, FaDocker, FaGitAlt, FaDatabase } from "react-icons/fa";
-import { SiTypescript, SiPostgresql, SiMongodb, SiMysql, SiAdonisjs, SiSolidity, SiRedux, SiSocketdotio, SiAwsamplify } from "react-icons/si";
+import {
+  FaJs,
+  FaNodeJs,
+  FaReact,
+  FaDocker,
+  FaGitAlt,
+  FaDatabase,
+} from "react-icons/fa";
+import {
+  SiTypescript,
+  SiPostgresql,
+  SiMysql,
+  SiExpress,
+  SiNestjs,
+  SiRedis,
+  SiApachekafka,
+  SiRabbitmq,
+  SiAmazonec2,
+  SiSwagger,
+} from "react-icons/si";
+import { FaKey, FaLink } from "react-icons/fa";
 
 const skillsData = [
   { name: "JavaScript", icon: <FaJs /> },
   { name: "TypeScript", icon: <SiTypescript /> },
-  { name: "React.js", icon: <FaReact /> },
-  { name: "Redux", icon: <SiRedux /> },
   { name: "Node.js", icon: <FaNodeJs /> },
-  { name: "Express.js", icon: <FaNodeJs /> },
-  { name: "AdonisJS", icon: <SiAdonisjs /> },
-  { name: "Socket.io", icon: <SiSocketdotio /> },
-  { name: "HTML", icon: <FaHtml5 /> },
-  { name: "CSS", icon: <FaCss3Alt /> },
-  { name: "Python", icon: <FaPython /> },
-  { name: "C++", icon: <FaDatabase /> },
-  { name: "Solidity", icon: <SiSolidity /> },
+  { name: "NestJS", icon: <SiNestjs /> },
+  { name: "Express.js", icon: <SiExpress /> },
+  { name: "React", icon: <FaReact /> },
   { name: "PostgreSQL", icon: <SiPostgresql /> },
   { name: "MySQL", icon: <SiMysql /> },
-  { name: "MongoDB", icon: <SiMongodb /> },
-  { name: "Redis", icon: <FaDatabase /> },
+  { name: "Redis", icon: <SiRedis /> },
+  { name: "Kafka", icon: <SiApachekafka /> },
+  { name: "RabbitMQ", icon: <SiRabbitmq /> },
+  { name: "REST APIs", icon: <FaLink /> },
+  { name: "JWT", icon: <FaKey /> },
+  { name: "Webhooks", icon: <FaLink /> },
+  { name: "TypeORM", icon: <FaDatabase /> },
+  { name: "Bull Queue", icon: <FaDatabase /> },
   { name: "Docker", icon: <FaDocker /> },
-  { name: "AWS", icon: <SiAwsamplify /> },
+  { name: "AWS EC2", icon: <SiAmazonec2 /> },
+  { name: "Swagger", icon: <SiSwagger /> },
   { name: "Git", icon: <FaGitAlt /> },
 ];
 
 const Skills = () => {
   return (
     <section className={styles.container}>
-      <h2 className={styles.title} id="TechStack">Tech Stack</h2>
+      <h2 className={styles.title} id="skills">Tech Stack</h2>
       <div className={styles.skillsGrid}>
         {skillsData.map((skill, index) => (
           <div key={index} className={styles.skillCard}>

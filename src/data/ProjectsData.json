@@ -1,38 +1,14 @@
- [
-      {
-        "project_name": "Web Scraper project",
-        "description": "Developed a web scraper application that scrapes the HackerNews website using cherrio and stores the data using Mysql and severs the required data to the client using Socket.io. React is used for the frontend.",
-        "technologies": ["React", "Mysql","NodeJs","Express js","Socket.io", "Web Development"],
-        "github_link": "https://github.com/Myselfkc21/Web_Scraper"
-      },
-      {
-        "project_name": "Placements management application ",
-        "description": "Built a placement management application during my internship with whitstack solutions. It has features like adding of resumes, managing the applicant status, managing the companies status etc",
-        "technologies": ["Postgress","React","Express js","Node Js"],
-        "github_link": "https://github.com/Myselfkc21/Vault."
-      },
-      {
-        "project_name": "Notes application ",
-        "description": "To enter the world of backend development i chose notes application as the starting point.This application has features like user authentication and user authorization along with admin login",
-        "technologies": ["MongoDB","React","Express js","Node Js"],
-        "github_link": "https://github.com/Myselfkc21/Notes-Application-with-user-authentication"
-      },
-      {
-        "project_name": "Autism Prediction",
-        "description": "Machine learning models can predict Autism Spectrum Disorder (ASD) by analyzing patterns and features in data, helping in early detection and personalized intervention strategies.",
-        "technologies": ["Machine Learning", "Python", "Data Science"],
-        "github_link": "https://github.com/Myselfkc21/Autism-Predictioin"
-      },
-      {
-        "project_name": "E-commerce Website",
-        "description": "Building an E-commerce website that has all the main features like payment gateway integration, coupons discount etc. The tech stack used is MERN.",
-        "technologies": ["Mongo","React","Express","node","Web Development"],
-        "github_link": "https://github.com/Myselfkc21/Dice-game-using-React"
-      },
-      {
-        "project_name": "Company landing Website",
-        "description": "Building a landing website that expplains all the details regarding the company, the services they provide, etc in a clean and beautiful User Interface. The website also features form submission feature so that user can contact them",
-        "technologies": ["tailwindcss","React","Web Development"],
-        "github_link": "https://github.com/Myselfkc21/WhitstackSolutions_Website"
-      }
-    ]  
+[
+  {
+    "project_name": "Memrise",
+    "description": "I wanted to reuse context across AI chats instead of re-explaining every time. So I built a small RAG system: store past conversations, embed them, and when you start a new chat you can pull in the relevant bits. Chrome extension captures messages, NestJS + Qdrant + Bull handle the backend, and I used OpenAI to summarize chunks before injection so it stays readable.",
+    "technologies": ["NestJS", "TypeScript", "Qdrant", "Bull Queue", "OpenAI", "Chrome Extension"],
+    "github_link": "https://github.com/Myselfkc21/memrise"
+  },
+  {
+    "project_name": "Hacker News scraper & dashboard",
+    "description": "Started as a weekend thing and got a bit out of hand. Live HN feed, filters, sorting — and I hooked in the OpenAI API to generate short summaries so you could skim without opening every link. React + Express + Socket.IO for the real-time bit. Good fun.",
+    "technologies": ["React", "Express.js", "Socket.IO", "OpenAI API"],
+    "github_link": "https://github.com/Myselfkc21/Web_Scraper"
+  }
+]

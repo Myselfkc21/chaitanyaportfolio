@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, FileDown } from "lucide-react";
 import styles from "./NavBar.module.css";
 
 const NavBar = () => {
@@ -17,7 +17,7 @@ const NavBar = () => {
   return (
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
       <a className={styles.title} href="/">
-        Portfolio
+        Krishna Chaitanya
       </a>
 
       <div className={styles.menu}>
@@ -29,10 +29,20 @@ const NavBar = () => {
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
+        <a href="/resume.pdf" className={styles.resumeBtn} download>
+          <FileDown size={16} />
+          Resume
+        </a>
         <ul
           className={`${styles.menuItems} ${menuOpen ? styles.openMenu : ""}`}
         >
-          {["About", "TechStack", "Projects", "Contact"].map((item) => (
+          <li className={styles.mobileResume}>
+            <a href="/resume.pdf" download onClick={() => setMenuOpen(false)}>
+              <FileDown size={16} />
+              Download Resume
+            </a>
+          </li>
+          {["About", "Experience", "Projects", "Skills", "Education", "Contact"].map((item) => (
             <li key={item}>
               <a
                 href={`#${item.toLowerCase()}`}

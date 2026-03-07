@@ -1,0 +1,151 @@
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 72px 24px;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+  color: var(--color-primary);
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  margin-bottom: 40px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  position: relative;
+  background: var(--color-bg-card);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 28px 32px 28px 40px;
+  transition: var(--transition);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.card:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-hover);
+}
+
+.cardAccent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: 2px 0 0 2px;
+}
+
+.header {
+  margin-bottom: 16px;
+}
+
+.roleRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.icon {
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.role {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+}
+
+.company {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.dot {
+  opacity: 0.6;
+}
+
+.location,
+.period {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.highlights li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.highlights li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.highlights li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 48px 20px;
+  }
+
+  .card {
+    padding: 20px 20px 20px 28px;
+  }
+
+  .meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dot {
+    display: none;
+  }
+}

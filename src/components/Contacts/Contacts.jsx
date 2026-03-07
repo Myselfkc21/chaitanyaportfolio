@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github, Phone, FileDown } from "lucide-react";
 import styles from "./Contacts.module.css";
 
 const contacts = [
@@ -7,6 +7,11 @@ const contacts = [
     icon: Mail,
     link: "mailto:arekapudikrishnachaitanya@gmail.com",
     text: "arekapudikrishnachaitanya@gmail.com",
+  },
+  {
+    icon: Phone,
+    link: "tel:+919652188766",
+    text: "+91 9652188766",
   },
   {
     icon: Linkedin,
@@ -25,11 +30,14 @@ const Contacts = () => {
     <section className={styles.container} id="contact">
       <div className={styles.content}>
         <div className={styles.header}>
-          <h2 className={styles.title}>Let’s Connect</h2>
+          <h2 className={styles.title}>Get in touch</h2>
           <p className={styles.subtitle}>
-            Interested in collaborating or have a question? I'm always open to
-            discussing new ideas or opportunities.
+            If you'd like to work together or just say hi, drop a line.
           </p>
+          <a href="/resume.pdf" className={styles.resumeBtn} download>
+            <FileDown size={18} />
+            Resume (PDF)
+          </a>
         </div>
         <div className={styles.links}>
           {contacts.map((contact, index) => (

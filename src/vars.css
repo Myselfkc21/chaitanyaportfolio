@@ -1,12 +1,24 @@
-:root{
-    /* colors */
-    --color-text:#fff;
-    --color-primary:#576cbc;
-    --color-secondary:#19376d;
-    --color-dark:#0b2447;
-    --color-bg:#04152d;
-    /* font */
-   
-    
-
+:root {
+  /* Retro warm palette — 70s / editorial */
+  --color-bg: #f5f0e8;
+  --color-bg-card: #ebe5dc;
+  --color-bg-elevated: #e5dfd4;
+  --color-text: #2c1810;
+  --color-text-muted: #5c4a3d;
+  --color-primary: #a65c2a;
+  --color-primary-dim: rgba(166, 92, 42, 0.12);
+  --color-secondary: #8b6914;
+  --color-accent: #6b5b3d;
+  --color-border: #c4b5a0;
+  --color-border-strong: #a65c2a;
+  --font-heading: "Libre Baskerville", "Georgia", serif;
+  --font-body: "Source Serif 4", "Georgia", serif;
+  --font-mono: "Courier Prime", "Courier New", monospace;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+  --shadow: 0 4px 12px rgba(44, 24, 16, 0.08);
+  --shadow-hover: 0 8px 24px rgba(44, 24, 16, 0.12);
+  --transition: 0.2s ease;
 }

@@ -1,28 +1,22 @@
 import React from "react";
 import styles from "./AboutSection.module.css";
-import pic from "../../assets/download.png";
-import { FaServer, FaCode, FaUsers, FaProjectDiagram } from "react-icons/fa";
 
 const aboutDetails = [
   {
-    icon: <FaCode />,
-    title: "Full Stack Development",
-    description: "Hands-on experience in building scalable applications using React, Node.js, AdonisJS, and PostgreSQL.",
+    title: "APIs & services",
+    description: "I design and build REST APIs and event-driven pieces that other devs and the frontend can rely on. NestJS, Node, TypeORM — the usual suspects, used in a way that stays readable.",
   },
   {
-    icon: <FaServer />,
-    title: "API & Backend Architecture",
-    description: "Specialized in designing efficient, RESTful APIs and scalable backend systems.",
+    title: "Data & performance",
+    description: "Databases and caching are where I go when something feels slow. I'd rather fix a query or add a sensible cache than throw more servers at it.",
   },
   {
-    icon: <FaProjectDiagram />,
-    title: "Projects & Innovation",
-    description: "Built impactful projects like a Web3 dApp, a language learning app, and real-time data scrapers.",
+    title: "Ownership",
+    description: "I like taking a feature from idea to deploy: schema, business logic, payments or webhooks, and a bit of observability so we know it's healthy.",
   },
   {
-    icon: <FaUsers />,
-    title: "Team Collaboration",
-    description: "Led cross-functional collaboration across frontend and backend teams; strong communication and problem-solving skills.",
+    title: "Working with others",
+    description: "Code reviews, sprint planning, and clear communication matter to me. I try to leave the codebase and the team in a better state than I found them.",
   },
 ];
 
@@ -30,22 +24,22 @@ const AboutSection = () => {
   return (
     <section className={styles.container}>
       <div className={styles.containerItems}>
-        <h1 className={styles.title} id="about">About Me</h1>
-        <div className={styles.contents}>
-          <div className={styles.imageWrapper}>
-            <img src={pic} className={styles.image} alt="Krishna Chaitanya" />
-          </div>
-          <div className={styles.items}>
-            {aboutDetails.map((item, index) => (
-              <div key={index} className={styles.item}>
-                <div className={styles.icon}>{item.icon}</div>
-                <div className={styles.itemtext}>
-                  <h2>{item.title}</h2>
-                  <p>{item.description}</p>
-                </div>
+        <h2 className={styles.title} id="about">About</h2>
+        <p className={styles.summary}>
+          I got into backend because I like when things run fast and don't break under load. 
+          I care about clear APIs, sensible data models, and shipping with the team. 
+          The last year I've been doing that at a product startup — a bit of everything from schema design to payment flows and making sure the system stays up.
+        </p>
+        <div className={styles.items}>
+          {aboutDetails.map((item, index) => (
+            <div key={index} className={styles.item}>
+              <span className={styles.bullet} />
+              <div className={styles.itemtext}>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
