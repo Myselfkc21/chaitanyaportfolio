@@ -10,7 +10,7 @@ const HeroSection = () => {
         <h1 className={styles.title}>
           <span className={styles.name}>Krishna Chaitanya</span>
         </h1>
-        <p className={styles.tagline}>Backend developer · Hyderabad</p>
+        <p className={styles.tagline}>Backend developer · <span>Hyderabad</span></p>
         <p className={styles.description}>
           I build the parts of software you don't see — APIs, queues, databases. 
           I like when things run fast, stay reliable, and play nice with the rest of the system. 
@@ -33,6 +33,7 @@ const HeroSection = () => {
           <span className={styles.initials}>KC</span>
         </div>
         <div className={styles.imageBorder} />
+        <div className={styles.imageBorder2} />
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Github } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 import styles from "./Projects.module.css";
 import projects from "../../data/ProjectsData.json";
 
@@ -23,15 +23,30 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
-              <a
-                href={project.github_link}
-                className={styles.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github size={18} />
-                <span>Code</span>
-              </a>
+              <div className={styles.links}>
+                {project.live_link && (
+                  <a
+                    href={project.live_link}
+                    className={styles.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink size={15} />
+                    <span>Live</span>
+                  </a>
+                )}
+                {project.github_link && (
+                  <a
+                    href={project.github_link}
+                    className={styles.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github size={15} />
+                    <span>Code</span>
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         ))}

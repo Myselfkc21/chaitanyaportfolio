@@ -13,22 +13,29 @@
 }
 
 .scrolled {
-  background: rgba(245, 240, 232, 0.92);
+  background: rgba(10, 10, 15, 0.92);
   padding: 0.75rem 10%;
-  border-bottom: 2px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  backdrop-filter: blur(12px);
 }
 
 .title {
   font-family: var(--font-heading);
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 700;
   text-decoration: none;
   color: var(--color-text);
   transition: var(--transition);
+  letter-spacing: 0.02em;
+}
+
+.title span {
+  color: var(--color-primary);
 }
 
 .title:hover {
   color: var(--color-primary);
+  text-shadow: 0 0 12px rgba(0, 255, 136, 0.5);
 }
 
 .menu {
@@ -41,21 +48,22 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 14px;
-  background: var(--color-bg);
-  border: 2px solid var(--color-primary);
+  padding: 6px 16px;
+  background: transparent;
+  border: 1px solid var(--color-border-strong);
   border-radius: var(--radius-sm);
   color: var(--color-primary);
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 700;
   text-decoration: none;
   transition: var(--transition);
 }
 
 .resumeBtn:hover {
-  background: var(--color-primary);
-  color: var(--color-bg);
+  background: var(--color-primary-dim);
+  box-shadow: var(--glow);
+  border-color: var(--color-primary);
 }
 
 .mobileResume {
@@ -70,7 +78,7 @@
 
 .menuItems a {
   font-family: var(--font-mono);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 400;
   text-decoration: none;
   color: var(--color-text-muted);
@@ -85,13 +93,15 @@
   left: 0;
   bottom: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   background: var(--color-primary);
   transition: var(--transition);
+  box-shadow: 0 0 6px var(--color-primary);
 }
 
 .menuItems a:hover {
   color: var(--color-primary);
+  text-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
 }
 
 .menuItems a:hover::after {
@@ -118,7 +128,7 @@
   }
 
   .scrolled {
-    background: rgba(245, 240, 232, 0.98);
+    background: rgba(10, 10, 15, 0.98);
   }
 
   .menuBtn {
@@ -131,7 +141,7 @@
 
   .mobileResume {
     display: block;
-    border-bottom: 2px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
     padding-bottom: 0.75rem;
     margin-bottom: 0.5rem;
   }
@@ -154,12 +164,13 @@
     background: var(--color-bg-card);
     padding: 1.25rem;
     border-radius: var(--radius-md);
-    border: 2px solid var(--color-border);
+    border: 1px solid var(--color-border);
     transform: translateY(-0.5rem);
     opacity: 0;
     visibility: hidden;
     transition: var(--transition);
     min-width: 180px;
+    backdrop-filter: blur(12px);
   }
 
   .openMenu {
@@ -181,5 +192,6 @@
 
   .menuItems a:hover {
     background: var(--color-primary-dim);
+    color: var(--color-primary);
   }
 }
