@@ -1,14 +1,23 @@
 [
   {
+    "project_name": "Metagross",
+    "description": "DAG-based multi-agent orchestration engine where agents reason autonomously, invoke tools, and complete tasks in parallel. Built OrchestratorService with Redis pub/sub to trigger downstream agents in real time, and AgentConsumer via Bull Queue with OpenAI tool-calling loops. Features a 3-table PostgreSQL schema with Redis Sets for distributed completion tracking, plus an SSE module and React Flow frontend to visualise DAG execution live as agents complete.",
+    "technologies": ["NestJS", "TypeScript", "Redis", "Bull Queue", "OpenAI", "PostgreSQL", "React Flow", "SSE"],
+    "github_link": null,
+    "live_link": "https://metagross-frontend.vercel.app"
+  },
+  {
     "project_name": "Memrise",
     "description": "I wanted to reuse context across AI chats instead of re-explaining every time. So I built a small RAG system: store past conversations, embed them, and when you start a new chat you can pull in the relevant bits. Chrome extension captures messages, NestJS + Qdrant + Bull handle the backend, and I used OpenAI to summarize chunks before injection so it stays readable.",
     "technologies": ["NestJS", "TypeScript", "Qdrant", "Bull Queue", "OpenAI", "Chrome Extension"],
-    "github_link": "https://github.com/Myselfkc21/memrise"
+    "github_link": "https://github.com/Myselfkc21/memrise",
+    "live_link": null
   },
   {
     "project_name": "Hacker News scraper & dashboard",
     "description": "Started as a weekend thing and got a bit out of hand. Live HN feed, filters, sorting — and I hooked in the OpenAI API to generate short summaries so you could skim without opening every link. React + Express + Socket.IO for the real-time bit. Good fun.",
     "technologies": ["React", "Express.js", "Socket.IO", "OpenAI API"],
-    "github_link": "https://github.com/Myselfkc21/Web_Scraper"
+    "github_link": "https://github.com/Myselfkc21/Web_Scraper",
+    "live_link": null
   }
 ]
